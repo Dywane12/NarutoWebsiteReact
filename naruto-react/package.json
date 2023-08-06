@@ -2,10 +2,12 @@
   "name": "naruto-react",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://narutodb.xyz",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
     "primeicons": "^6.0.1",
     "primereact": "^9.6.1",
     "react": "^18.2.0",

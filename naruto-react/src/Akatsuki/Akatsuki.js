@@ -1,9 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
 
-const Akatsuki = () => {
-    return(
-        <div>Akatsuki!</div>
-    )
+class Akatsuki extends Component {
+    
+    
+    render() {
+        return(
+            <div>Akatsuki!</div>
+        )
+    }
 }
 
 export default Akatsuki;

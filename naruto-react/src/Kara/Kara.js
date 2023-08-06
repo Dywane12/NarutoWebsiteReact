@@ -1,9 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
 
-const Kara = () => {
-    return(
-        <div>Kara!</div>
-    )
+class Kara extends Component {
+    
+    render() {
+        return(
+            <div>Kara!</div>
+        )
+    }
 }
 
 export default Kara;

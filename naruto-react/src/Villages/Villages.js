@@ -1,9 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
 
-const Villages = () => {
-    return(
-        <div>Villages!</div>
-    )
+class Villages extends Component {
+    
+    render() {
+        return(
+            <div>Villages!</div>
+        )
+    }
 }
 
 export default Villages;

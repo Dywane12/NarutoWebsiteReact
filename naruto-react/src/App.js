@@ -7,7 +7,7 @@ import Characters from './Characters/Characters';
 import Clans from './Clans/Clans';
 import Akatsuki from './Akatsuki/Akatsuki';
 import Kara from './Kara/Kara';
-import Kekkeigenkai from './Kekkeigenkai/Kekkeigenkai';
+import KekkeiGenkai from './KekkeiGenkai/KekkeiGenkai';
 import TailedBeasts from './TailedBeasts/TailedBeasts';
 import Teams from './Teams/Teams';
 import Villages from './Villages/Villages';
@@ -31,10 +31,6 @@ function App() {
       command: () => {navigate('/clans') }
     },
     {
-      label: 'Kara',
-      command: () => {navigate('/kara') }
-    },
-    {
       label: 'Kekkeigenkai',
       command: () => {navigate('/kekkeigenkai') }
     },
@@ -53,7 +49,11 @@ function App() {
     {
       label: 'Akatsuki',
       command: () => {navigate('/akatsuki') }
-    }
+    },
+    {
+      label: 'Kara',
+      command: () => {navigate('/kara') }
+    },
   ]
 
   return (
@@ -64,7 +64,7 @@ function App() {
           <Route path='characters' element={<Characters />} />
           <Route path='clans' element={<Clans />} />
           <Route path='kara' element={<Kara />} />
-          <Route path='kekkeigenkai' element={<Kekkeigenkai />} />
+          <Route path='kekkeigenkai' element={<KekkeiGenkai />} />
           <Route path='tailedbeasts' element={<TailedBeasts />} />
           <Route path='teams' element={<Teams />} />
           <Route path='villages' element={<Villages />} />

@@ -1,9 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
 
-const TailedBeasts = () => {
-    return(
-        <div>Tailed Beasts!</div>
-    )
+class TailedBeasts extends Component {
+    
+    render() {
+        return(
+            <div>Tailed Beasts!</div>
+        )
+    }
 }
 
 export default TailedBeasts;
