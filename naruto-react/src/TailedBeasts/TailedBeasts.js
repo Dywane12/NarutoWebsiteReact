@@ -18,7 +18,7 @@ class TailedBeasts extends Component {
         .then(response => {
             this.setState({tailedBeast: response.data,
             error: false})
-            console.log(response);
+            // console.log(response);
         }).catch((err) => {
             this.setState({error: true})
         })
@@ -27,7 +27,7 @@ class TailedBeasts extends Component {
     render() {
         return(
             <div className="tailed-beasts">
-                <img className="tailed-beasts-img" src="https://cdn.wallpapersafari.com/97/14/OzeXo2.jpg" alt="" />
+                <img className="tailed-beasts-img" src="https://wallpapercave.com/wp/wp2806596.jpg" alt="" />
                 <div className="tailed-beasts-text">
                     <h1>Tailed Beasts</h1>
                     <p>Seach for any Tailed Beast you want within the naruto verse!!<br />Example: "Shukaku", "Kurama" etc.</p>
@@ -61,6 +61,9 @@ class TailedBeasts extends Component {
                         novel={this.state.tailedBeast.debut.novel}
                         creator={this.state.tailedBeast.family.creator}
                         sibling={this.state.tailedBeast.family.sibling}
+                        jinchūriki={this.state.tailedBeast.personal.jinchūriki}
+                        kekkeiGenkai={this.state.tailedBeast.personal.kekkeiGenkai}
+                        jutsu={this.state.tailedBeast.jutsu}
                         />) 
                     }
                 </div>

@@ -33,6 +33,32 @@ const TailedBeast = (props) => {
             {
                 props.sibling ? <p className="tailed-beast-text">Sibling: {props.sibling}</p> : null
             }
+            {
+                props.kekkeiGenkai ?<h4>Kekkei Genkai:</h4> : null 
+            }
+            {
+                props.kekkeiGenkai ? <p className="tailed-beast-text">{props.kekkeiGenkai}</p> : null
+            }
+            <h4>Jinchūriki:</h4>
+            {
+                props.jinchūriki ? props.jinchūriki.map((j, index) => {
+                    return(
+                        <div className="tailed-beast-images">
+                            <p key={index} className="tailed-beast-text">{j}, </p>
+                        </div>
+                    )
+                }) : null
+            }
+            <h4>Jutsu:</h4>
+            {
+                props.jutsu ? props.jutsu.map((j, index) => {
+                    return(
+                        <div className="tailed-beast-images">
+                            <p key={index} className="tailed-beast-text">{j}, </p>
+                        </div>
+                    )
+                }) : null
+            }
         </div>
     )
 

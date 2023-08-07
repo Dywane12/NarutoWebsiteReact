@@ -18,7 +18,7 @@ class Clans extends Component {
         .then(response => {
             this.setState({clan: response.data,
             error: false})
-            console.log(response);
+            // console.log(response);
         }).catch((err) => {
             this.setState({error: true})
         })

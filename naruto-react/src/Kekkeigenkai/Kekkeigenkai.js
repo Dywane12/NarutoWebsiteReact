@@ -18,7 +18,7 @@ class KekkeiGenkai extends Component {
         .then(response => {
             this.setState({kekkeiGenkai: response.data,
             error: false})
-            console.log(response);
+            // console.log(response);
         }).catch((err) => {
             this.setState({error: true})
         })
