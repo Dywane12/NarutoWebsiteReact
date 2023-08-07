@@ -6,7 +6,6 @@ const Character = (props) => {
     return(
         <div>
             <h4>Name: {props.name}</h4>
-            <h4>Images:</h4>
             {
                 props.images.map((image, index) => {
                     return(
