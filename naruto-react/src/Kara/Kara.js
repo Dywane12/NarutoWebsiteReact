@@ -18,7 +18,7 @@ class Kara extends Component {
         .then(response => {
             this.setState({ka: response.data,
             error: false})
-            console.log(response);
+            // console.log(response);
         }).catch((err) => {
             this.setState({error: true})
         })
