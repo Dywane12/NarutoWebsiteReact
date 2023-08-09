@@ -7,7 +7,7 @@ import Characters from './Characters/Characters';
 import Clans from './Clans/Clans';
 import Akatsuki from './Akatsuki/Akatsuki';
 import Kara from './Kara/Kara';
-import KekkeiGenkai from './KekkeiGenkai/KekkeiGenkai';
+import KekkeiGenkai from './Kekkeigenkai/Kekkeigenkai';
 import TailedBeasts from './TailedBeasts/TailedBeasts';
 import Teams from './Teams/Teams';
 import Villages from './Villages/Villages';

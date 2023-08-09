@@ -7,21 +7,10 @@ import './Akatsuki.css';
 class Akatsuki extends Component {
 
     state = {
-        all: null,
         aka: null,
         name: '',
         error: false
     };
-
-    componentDidMount() {
-        axios.get(`/api/akatsuki`)
-        .then(response => {
-            this.setState({all: response.data});
-            console.log(response);
-        }).catch(err => {
-            console.log(err);
-        })
-    }
 
     handleSubmit = (e) => {
         e.preventDefault();
@@ -38,9 +27,9 @@ class Akatsuki extends Component {
     render() {
         // console.log(this.state.characters)
         return(
-            <div className="characters">
-                <img className="characters-img" src="https://www.thedigitalfix.com/wp-content/sites/thedigitalfix/2022/04/naruto-characters-header.jpg" alt="" />
-                <div className="characters-text">
+            <div className="akatsuki">
+                <img className="akatsuki-img" src="https://cdn.wallpapersafari.com/34/30/wuJU1A.png" alt="" />
+                <div className="akatsuki-text">
                     <h1>Akatsuki</h1>
                     <p>Seach for any character from the Akatsuki that you want within the naruto verse!!<br />Use FULL NAME to search<br />Example: "Itachi Uchiha", "Black Zetsu" etc.</p>
                     <p>You need to type the name correctly. For example: Itachi Uchiha <br /> You can copy ū, ō from here if you need them.</p>
@@ -62,19 +51,6 @@ class Akatsuki extends Component {
                         this.state.error ? <p>Invalid character! Please follow the example above!</p> : null
                     }
                     {
-                        !this.state.all && this.state.aka ? null : <h4>General information:</h4> 
-                    }
-                    {
-                            !this.state.all && this.state.aka ? this.state.all.akatsuki.map((ch, index) => {
-                                return(
-                                    <div className="character-images">
-                                        <p className="">{ch.name}</p>
-                                        <p key={index} className="character-text">{j}, </p>
-                                    </div>
-                                )
-                            }) : null
-                        }
-                    {
                         !this.state.aka ? null : (<Aka 
                         name={this.state.aka.name}
                         anime={this.state.aka.debut.anime}
@@ -83,6 +59,14 @@ class Akatsuki extends Component {
                         manga={this.state.aka.debut.manga}
                         movie={this.state.aka.debut.movie}
                         novel={this.state.aka.debut.novel}
+                        images={this.state.aka.images}
+                        jutsu={this.state.aka.jutsu}
+                        natureType={this.state.aka.natureType}
+                        birthdate={this.state.aka.personal.birthdate}
+                        bloodType={this.state.aka.personal.bloodType}
+                        sex={this.state.aka.personal.sex}
+                        clan={this.state.aka.personal.clan}
+                        titles={this.state.aka.personal.titles}
                         />) 
                     }
                 </div>

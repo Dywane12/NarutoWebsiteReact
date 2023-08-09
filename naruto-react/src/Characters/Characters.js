@@ -62,16 +62,11 @@ class Characters extends Component {
                         images={this.state.character.images}
                         jutsu={this.state.character.jutsu}
                         natureType={this.state.character.natureType}
-                        affiliation={this.state.character.personal.affiliation}
                         birthdate={this.state.character.personal.birthdate}
                         bloodType={this.state.character.personal.bloodType}
                         sex={this.state.character.personal.sex}
                         clan={this.state.character.personal.clan}
-                        classification={this.state.character.personal.classification}
-                        occupation={this.state.character.personal.occupation}
-                        teams={this.state.character.personal.team}
                         titles={this.state.character.personal.titles}
-                        kekkeiGenkai={this.state.character.personal.kekkeiGenkai}
                         />) 
                     }
                 </div>
