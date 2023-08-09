@@ -1,10 +1,14 @@
 # NarutoWebsiteReact
 
-Website with Naruto information
+Api used - https://www.narutodb.xyz/
 
-1. Use naruto api (https://www.narutodb.xyz/)
-2. Have routes for: home, characters, clans, kara, kekkeigenkai, tailed beasts, teams, villages, akatsuki
-3. Have a navbar
-4. (optional) Have a search bar for each "page" and let the user search for a specific character etc.
-5. Details page for every route (character detail, kara detail, clan detail etc.)
-6. Setup guide for the project
+### Setup guide:
+
+1. Clone the repository
+2. Open it in your preferred IDE
+3. Open a git bash terminal and navigate to the folder where you cloned the repository
+4. Run the command `npm install`
+5. Run the command `cd ./naruto-react/`
+6. Run the command `npm install` again
+7. Run the command `npm start` and wait for the website to open in your browser
+8. Enjoy the website! 
