@@ -2,15 +2,15 @@ import './App.css';
 import { Menubar } from 'primereact/menubar';
 import { useNavigate } from 'react-router-dom';
 import { Route, Routes } from 'react-router';
-import Home from './Home/Home';
-import Characters from './Characters/Characters';
-import Clans from './Clans/Clans';
-import Akatsuki from './Akatsuki/Akatsuki';
-import Kara from './Kara/Kara';
-import KekkeiGenkai from './Kekkeigenkai/Kekkeigenkai';
-import TailedBeasts from './TailedBeasts/TailedBeasts';
-import Teams from './Teams/Teams';
-import Villages from './Villages/Villages';
+import Home from './Components/Home/Home';
+import Characters from './Components//Characters/Characters';
+import Clans from './Components//Clans/Clans';
+import Akatsuki from './Components//Akatsuki/Akatsuki';
+import Kara from './Components//Kara/Kara';
+import KekkeiGenkai from './Components//Kekkeigenkai/Kekkeigenkai';
+import TailedBeasts from './Components//TailedBeasts/TailedBeasts';
+import Teams from './Components//Teams/Teams';
+import Villages from './Components//Villages/Villages';
         
 
 function App() {
